@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>__TITLE__ - 在线免费工具</title>
+<meta name="description" content="__DESC__">
+<link rel="canonical" href="https://tool-site.pages.dev/tools/__FILE__.html">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;background:#f8f9fa;color:#333}
+.header{background:#1a1a2e;color:#fff;padding:16px 20px}
+.header a{color:#aaa;text-decoration:none}
+.container{max-width:700px;margin:0 auto;padding:20px}
+h1{font-size:1.6em;margin-bottom:12px}
+.card{background:#fff;border-radius:12px;padding:24px;margin-bottom:16px;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
+input,textarea,select{width:100%;padding:10px 14px;border:2px solid #e0e0e0;border-radius:8px;margin:6px 0;font-size:1em;outline:none;font-family:inherit}
+input:focus,textarea:focus{border-color:#4a90d9}
+button{padding:10px 20px;background:#4a90d9;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:.95em;font-weight:600}
+.result{padding:12px;background:#f0f7ff;border-radius:8px;margin-top:8px;font-size:.95em;word-break:break-all}
+.ad{background:#f0f0f0;border:2px dashed #ddd;border-radius:12px;padding:16px;text-align:center;color:#bbb;margin:16px 0}
+.footer{text-align:center;padding:20px;color:#aaa;font-size:.85em}
+</style>
+</head>
+<body>
+<div class="header"><a href="/">← 工具箱首页</a></div>
+<div class="container">
+<h1>__TITLE__</h1>
+<div class="ad">广告位</div>
+<div class="card">
+  <div id="toolArea"></div>
+</div>
+<div class="ad">广告位</div>
+</div>
+<div class="footer"><p>在线工具箱 © 2026</p></div>
+<script src="/assets/tools.js"></script>
+<script>initTool('__TOOL__')</script>
+</body>
+</html>

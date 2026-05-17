@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>时间戳转换工具 - Unix时间戳在线转换 | 免费在线工具箱</title>
+<meta name="description" content="免费在线Unix时间戳转换工具，支持时间戳转日期、日期转时间戳，支持秒/毫秒级精度。">
+<link rel="canonical" href="https://tool-site.pages.dev/tools/timestamp.html">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;background:#f8f9fa;color:#333}
+.header{background:#1a1a2e;color:#fff;padding:16px 20px;display:flex;align-items:center;gap:16px}
+.header a{color:#aaa;text-decoration:none}
+.container{max-width:700px;margin:0 auto;padding:20px}
+h1{font-size:1.6em;margin-bottom:12px}
+.card{background:#fff;border-radius:12px;padding:24px;margin-bottom:16px;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
+.card h2{font-size:1.1em;margin-bottom:12px}
+.row{display:flex;gap:8px;margin-bottom:8px;flex-wrap:wrap}
+input[type=text],input[type=number]{flex:1;padding:10px 14px;border:2px solid #e0e0e0;border-radius:8px;font-size:1em;outline:none;min-width:200px}
+input:focus{border-color:#4a90d9}
+button{padding:10px 20px;background:#4a90d9;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:.95em;font-weight:600;white-space:nowrap}
+button:hover{opacity:.9}
+.result{padding:12px;background:#f0f7ff;border-radius:8px;margin-top:8px;font-size:.95em}
+.now-info{font-size:.85em;color:#888;margin-bottom:12px}
+.footer{text-align:center;padding:20px;color:#aaa;font-size:.85em;border-top:1px solid #eee;margin-top:30px}
+</style>
+</head>
+<body>
+<div class="header"><a href="/">← 工具箱首页</a><span>时间戳转换工具</span></div>
+<div class="container">
+<h1>⏰ 时间戳转换工具</h1>
+<p class="now-info">当前时间戳：<strong id="nowTs"></strong> | 当前时间：<strong id="nowDate"></strong></p>
+
+<div class="card">
+  <h2>📅 时间戳 → 日期</h2>
+  <div class="row">
+    <input type="number" id="tsInput" placeholder="输入时间戳，如 1715678900">
+    <select id="unit" style="padding:10px;border:2px solid #e0e0e0;border-radius:8px;font-size:1em">
+      <option value="s">秒</option>
+      <option value="ms">毫秒</option>
+    </select>
+    <button onclick="ts2date()">转换</button>
+  </div>
+  <div class="result" id="tsResult" style="display:none"></div>
+</div>
+
+<div class="card">
+  <h2>📆 日期 → 时间戳</h2>
+  <div class="row">
+    <input type="text" id="dateInput" placeholder="如 2026-05-18 14:30:00">
+    <button onclick="date2ts()">转换</button>
+  </div>
+  <div class="result" id="dateResult" style="display:none"></div>
+</div>
+
+<div style="background:#f0f0f0;border-radius:12px;padding:16px;text-align:center;color:#bbb">广告位</div>
+</div>
+<div class="footer"><p>时间戳转换工具 · 在线工具箱 © 2026</p></div>
+
+<script>
+function now(){setInterval(()=>{document.getElementById('nowTs').textContent=Math.floor(Date.now()/1000);document.getElementById('nowDate').textContent=new Date().toLocaleString('zh-CN')},1000)}
+function ts2date(){
+  let v=document.getElementById('tsInput').value;
+  if(!v){document.getElementById('tsResult').textContent='请输入时间戳';document.getElementById('tsResult').style.display='block';return}
+  if(document.getElementById('unit').value==='ms')v=v/1000;
+  const d=new Date(v*1000);
+  const r=document.getElementById('tsResult');
+  r.innerHTML=`<strong>UTC:</strong> ${d.toUTCString()}<br><strong>本地:</strong> ${d.toLocaleString('zh-CN')}<br><strong>ISO:</strong> ${d.toISOString()}`;
+  r.style.display='block';
+}
+function date2ts(){
+  const v=document.getElementById('dateInput').value;
+  const d=new Date(v);
+  if(isNaN(d.getTime())){document.getElementById('dateResult').textContent='日期格式错误，试试：2026-05-18 14:30:00';document.getElementById('dateResult').style.display='block';return}
+  const r=document.getElementById('dateResult');
+  r.innerHTML=`<strong>秒:</strong> ${Math.floor(d.getTime()/1000)}<br><strong>毫秒:</strong> ${d.getTime()}`;
+  r.style.display='block';
+}
+now();
+</script>
+</body>
+</html>

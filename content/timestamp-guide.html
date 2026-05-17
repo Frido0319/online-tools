@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>时间戳转换完全指南 - 在线工具教程</title>
+<meta name="description" content="什么是Unix时间戳？如何在JavaScript/Python/Java中转换时间戳？这篇指南全覆盖。附在线转换工具。">
+<link rel="canonical" href="https://tool-site.pages.dev/content/timestamp-guide.html">
+<style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;background:#f8f9fa;color:#333;line-height:1.8}.header{background:#1a1a2e;color:#fff;padding:16px 20px}.header a{color:#aaa;text-decoration:none}.container{max-width:720px;margin:0 auto;padding:20px}h1{font-size:1.6em;margin:0 0 8px}h2{font-size:1.2em;margin:24px 0 12px}h3{font-size:1.05em;margin:16px 0 8px}.ad{background:#f0f0f0;border:2px dashed #ddd;border-radius:12px;padding:16px;text-align:center;color:#bbb;margin:16px 0}.footer{text-align:center;padding:20px;color:#aaa;font-size:.85em}pre{background:#f4f4f4;padding:12px;border-radius:6px;overflow-x:auto;font-size:.9em;margin:8px 0}p{margin:8px 0}</style></head>
+<body><div class="header"><a href="/">← 工具箱首页</a></div><div class="container">
+<h1>时间戳转换完全指南：从概念到实战</h1>
+<p style="color:#888">发布日期：2026-05-12</p>
+<div class="ad">广告位</div>
+
+<p><strong>时间戳（Timestamp）</strong>是计算机中表示时间的一种方式，通常指从1970年1月1日0时0分0秒（UTC）到现在的总秒数。几乎所有编程语言和数据库都使用时间戳来存储时间，因为它是一个整数，不涉及时区问题。</p>
+
+<h2>为什么需要时间戳转换？</h2>
+<p>时间戳是一串数字（如1715678900），人类无法直接读懂。当你看到API返回的创建时间是一串数字时，就需要转换成可读的日期格式。反之，有时你需要把"2026年5月18日"存到数据库，也需要转成时间戳。</p>
+
+<h2>JavaScript中的时间戳转换</h2>
+<pre>// 获取当前时间戳（毫秒）
+const ts = Date.now()  // 1715678900000
+// 转为秒
+const tsSec = Math.floor(Date.now() / 1000)
+
+// 时间戳 → 日期
+const date = new Date(1715678900 * 1000)
+console.log(date.toLocaleString('zh-CN')) // 2026/5/14 15:15:00
+
+// 日期 → 时间戳
+const ts2 = Math.floor(new Date('2026-05-14').getTime() / 1000)</pre>
+
+<h2>Python中的时间戳转换</h2>
+<pre>import time, datetime
+# 当前时间戳
+ts = int(time.time())
+# 时间戳 → 日期
+dt = datetime.datetime.fromtimestamp(ts)
+# 日期 → 时间戳
+ts2 = int(datetime.datetime(2026,5,14).timestamp())</pre>
+
+<h2>在线工具快速转换</h2>
+<p>不需要写代码的时候，直接用<a href="/tools/timestamp.html">在线时间戳转换工具</a>更方便——粘贴时间戳或日期，一键转换。</p>
+
+<div class="ad">广告位</div>
+<p style="text-align:center"><a href="/">← 返回工具箱首页</a></p>
+</div>
+<div class="footer"><p>在线工具箱 © 2026</p></div>
+</body></html>
