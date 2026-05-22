@@ -1,126 +1,1327 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>摆摊创业完全指南：从选址到日入1000+ | 在线工具箱</title>
-<meta name="description" content="2026最全摆摊创业攻略：选品技巧、选址方法、进货渠道、定价策略、出摊实操。新手照着做，少走3个月弯路。">
-<meta name="keywords" content="摆摊创业,摆摊攻略,夜市摆摊,地摊经济,副业赚钱,小吃摊,摆摊卖什么赚钱">
-<link rel="canonical" href="https://tool-site.pages.dev/content/street-vendor-guide.html">
-<style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;background:#f8f9fa;color:#333;line-height:1.9;font-size:17px}.header{background:#1a1a2e;color:#fff;padding:16px 20px}.header a{color:#aaa;text-decoration:none}.container{max-width:720px;margin:0 auto;padding:20px}h1{font-size:1.7em;margin:0 0 6px;line-height:1.4}h2{font-size:1.25em;margin:28px 0 12px;color:#1a1a2e;border-left:4px solid #e8453c;padding-left:12px}h3{font-size:1.05em;margin:18px 0 8px}.ad{background:#f0f0f0;border:2px dashed #ddd;border-radius:12px;padding:16px;text-align:center;color:#bbb;margin:20px 0}.highlight{background:#fff8e1;border-left:4px solid #f39c12;padding:14px 18px;margin:16px 0;border-radius:0 8px 8px 0}pre{background:#f4f4f4;padding:12px;border-radius:6px;overflow-x:auto;font-size:.9em;margin:8px 0}.footer{text-align:center;padding:20px;color:#aaa;font-size:.85em;border-top:1px solid #eee;margin-top:30px}p{margin:10px 0}ul,ol{margin:8px 0 8px 24px}li{margin:6px 0}table{width:100%;border-collapse:collapse;margin:16px 0}td,th{border:1px solid #e0e0e0;padding:10px 14px;text-align:left;font-size:.95em}th{background:#f8f8f8;font-weight:600}strong{color:#1a1a2e}</style></head>
-<body><div class="header"><a href="/">← 工具箱首页</a></div><div class="container">
+<head>
+<meta charset="UTF-8">
+<style>
+  @page {
+    size: A4;
+    margin: 0;
+    @bottom-center {
+      content: "— " counter(page) " —";
+      font-size: 9pt;
+      color: #999;
+      font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+    }
+  }
+  @page :first {
+    @bottom-center {
+      content: none;
+    }
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    font-size: 11.5pt;
+    line-height: 1.85;
+    color: #2d2d2d;
+    counter-reset: section;
+  }
 
-<h1>🛒 摆摊创业完全指南：从0到日入1000+</h1>
-<p style="color:#888">更新于 2026年5月 | 适合新手 · 纯干货</p>
+  /* ===== COVER ===== */
+  .cover {
+    width: 210mm; height: 297mm;
+    background: linear-gradient(160deg, #0f1729 0%, #1a2740 30%, #1e3a3a 70%, #1a2f1a 100%);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    position: relative; overflow: hidden;
+    page: cover;
+  }
+  .cover::before {
+    content: "";
+    position: absolute; top: -100px; right: -100px;
+    width: 500px; height: 500px;
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 50%;
+  }
+  .cover::after {
+    content: "";
+    position: absolute; bottom: -80px; left: -80px;
+    width: 350px; height: 350px;
+    border: 1px solid rgba(255,255,255,0.04);
+    border-radius: 50%;
+  }
+  .cover .ornament {
+    position: absolute; top: 60px; left: 0; right: 0;
+    text-align: center;
+    font-size: 32pt; letter-spacing: 18px;
+    opacity: 0.06;
+    color: #fff;
+  }
+  .cover-content {
+    position: relative; z-index: 2; text-align: center;
+  }
+  .cover .icon-row { font-size: 42pt; margin-bottom: 16px; letter-spacing: 12px; }
+  .cover h1 {
+    font-size: 38pt; font-weight: 900; color: #fff;
+    letter-spacing: 6px; margin-bottom: 10px;
+  }
+  .cover .subtitle {
+    font-size: 15pt; color: rgba(255,255,255,0.7);
+    letter-spacing: 4px; font-weight: 300;
+    margin-bottom: 40px;
+  }
+  .cover .divider {
+    width: 80px; height: 3px;
+    background: linear-gradient(90deg, #f59e0b, #e8453c, #f59e0b);
+    margin: 0 auto 40px;
+  }
+  .cover .meta {
+    font-size: 11pt; color: rgba(255,255,255,0.45);
+    letter-spacing: 2px; line-height: 2;
+  }
+  .cover .badge-row {
+    display: flex; gap: 16px; justify-content: center;
+    margin-top: 36px;
+  }
+  .cover .badge {
+    border: 1px solid rgba(255,255,255,0.15);
+    color: rgba(255,255,255,0.6);
+    padding: 8px 20px; border-radius: 30px;
+    font-size: 10pt; letter-spacing: 2px;
+  }
 
-<div class="ad">广告位</div>
+  /* ===== TOC ===== */
+  .toc {
+    width: 210mm; min-height: 297mm;
+    padding: 55mm 25mm 30mm;
+    page: toc;
+  }
+  .toc h2 {
+    font-size: 24pt; font-weight: 900; margin-bottom: 28px;
+    letter-spacing: 4px;
+  }
+  .toc .part-title {
+    font-size: 10pt; font-weight: 700; color: #e8453c;
+    letter-spacing: 3px; text-transform: uppercase;
+    margin: 22px 0 10px;
+  }
+  .toc .toc-item {
+    display: flex; align-items: baseline;
+    padding: 5px 0; border-bottom: 1px dotted #ddd;
+    font-size: 11pt;
+  }
+  .toc .toc-num { color: #e8453c; font-weight: 700; min-width: 32px; }
+  .toc .toc-label { flex: 1; }
+  .toc .toc-page { color: #999; font-size: 10pt; }
 
-<div class="highlight">
-<strong>📌 先说结论：</strong>摆摊是2026年投入最小、回本最快的创业方式。启动资金1000-3000元，当天出摊当天见钱。但选错品、选错位置，90%的人第一个月就放弃了。这篇指南让你少走3个月弯路。
+  /* ===== SECTION PAGES ===== */
+  .section-page {
+    width: 210mm; min-height: 297mm;
+    padding: 0;
+    position: relative;
+  }
+  .section-hero {
+    width: 210mm;
+    padding: 32mm 22mm 18mm;
+    position: relative;
+  }
+  .part-label {
+    font-size: 9pt; letter-spacing: 4px; text-transform: uppercase;
+    font-weight: 700; margin-bottom: 6px;
+  }
+  .section-hero h2 {
+    font-size: 26pt; font-weight: 900; letter-spacing: 2px;
+    margin-bottom: 8px; line-height: 1.2;
+  }
+  .section-hero .section-desc {
+    font-size: 11pt; color: #777; line-height: 1.6;
+    margin-top: 8px;
+  }
+  .section-hero .accent-bar {
+    width: 50px; height: 4px; border-radius: 2px;
+    margin: 16px 0;
+  }
+  .section-body {
+    padding: 0 22mm 20mm;
+  }
+
+  /* color themes per part */
+  .theme-orange .part-label { color: #e8453c; }
+  .theme-orange .accent-bar { background: #e8453c; }
+  .theme-orange h2 { color: #1a1a2e; }
+  .theme-blue .part-label { color: #2563eb; }
+  .theme-blue .accent-bar { background: #2563eb; }
+  .theme-blue h2 { color: #1a1a2e; }
+  .theme-green .part-label { color: #059669; }
+  .theme-green .accent-bar { background: #059669; }
+  .theme-green h2 { color: #1a1a2e; }
+  .theme-purple .part-label { color: #7c3aed; }
+  .theme-purple .accent-bar { background: #7c3aed; }
+  .theme-purple h2 { color: #1a1a2e; }
+
+  /* ===== CONTENT STYLES ===== */
+  h3 {
+    font-size: 14pt; font-weight: 700; margin: 22px 0 10px;
+    color: #1a1a2e; letter-spacing: 1px;
+    padding-left: 12px; border-left: 3px solid #e8453c;
+  }
+  h4 {
+    font-size: 12pt; font-weight: 700; margin: 16px 0 8px;
+    color: #333;
+  }
+  p { margin: 8px 0; }
+  ul, ol { margin: 6px 0 6px 18px; }
+  li { margin: 4px 0; }
+
+  /* ===== TABLES ===== */
+  table {
+    width: 100%; border-collapse: collapse; margin: 14px 0;
+    font-size: 10pt;
+  }
+  th {
+    background: #1a1a2e; color: #fff; padding: 9px 12px;
+    font-weight: 600; text-align: left; font-size: 9.5pt;
+    letter-spacing: 1px;
+  }
+  td {
+    padding: 8px 12px; border-bottom: 1px solid #eee;
+  }
+  tr:nth-child(even) td { background: #fafafa; }
+  tr:hover td { background: #fff8e1; }
+
+  /* ===== CALLOUT BOXES ===== */
+  .callout {
+    padding: 14px 18px; margin: 16px 0; border-radius: 8px;
+    border-left: 4px solid #333; background: #f8f8f8;
+  }
+  .callout-tip { border-left-color: #059669; background: #ecfdf5; }
+  .callout-warn { border-left-color: #f59e0b; background: #fffbeb; }
+  .callout-danger { border-left-color: #e8453c; background: #fef2f2; }
+  .callout-info { border-left-color: #2563eb; background: #eff6ff; }
+  .callout strong { display: block; margin-bottom: 4px; font-size: 11pt; }
+
+  /* ===== STEP CARDS ===== */
+  .step-cards { display: flex; gap: 12px; margin: 14px 0; flex-wrap: wrap; }
+  .step-card {
+    flex: 1; min-width: 140px; background: #fff;
+    border: 1px solid #e5e5e5; border-radius: 10px; padding: 16px;
+    text-align: center;
+  }
+  .step-card .step-num {
+    width: 32px; height: 32px; background: #1a1a2e; color: #fff;
+    border-radius: 50%; display: inline-flex; align-items: center;
+    justify-content: center; font-size: 10pt; font-weight: 700; margin-bottom: 8px;
+  }
+  .step-card .step-title { font-weight: 700; font-size: 11pt; margin-bottom: 4px; }
+  .step-card .step-desc { font-size: 9.5pt; color: #777; line-height: 1.5; }
+
+  /* ===== CHECKLIST ===== */
+  .checklist { margin: 14px 0; }
+  .checklist .check-item {
+    display: flex; align-items: flex-start; padding: 7px 10px;
+    border-bottom: 1px solid #f0f0f0; font-size: 10.5pt;
+  }
+  .check-item .check-box {
+    width: 18px; height: 18px; border: 2px solid #ccc;
+    border-radius: 3px; margin-right: 10px; flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  /* ===== FORMULA BOX ===== */
+  .formula-box {
+    background: linear-gradient(135deg, #1a1a2e, #2d2d44);
+    color: #fff; padding: 20px 24px; border-radius: 12px;
+    margin: 16px 0; text-align: center;
+  }
+  .formula-box .formula {
+    font-size: 18pt; font-weight: 900; letter-spacing: 2px;
+    margin: 6px 0;
+  }
+
+  /* ===== ICON BULLETS ===== */
+  .icon-list { list-style: none; margin-left: 0; }
+  .icon-list li { padding: 5px 0 5px 24px; position: relative; }
+  .icon-list li::before {
+    position: absolute; left: 0; font-size: 11pt;
+  }
+
+  /* ===== TWO COLUMN ===== */
+  .two-col { display: flex; gap: 20px; margin: 14px 0; }
+  .two-col > div { flex: 1; }
+
+  /* ===== COMPARISON TABLE ===== */
+  .compare-table th:first-child { background: #f8f8f8; color: #333; width: 120px; }
+  .compare-table td:first-child { font-weight: 600; background: #fafafa; }
+
+  /* ===== FLOW ARROW ===== */
+  .flow {
+    display: flex; align-items: center; justify-content: center;
+    gap: 8px; margin: 18px 0; flex-wrap: wrap;
+  }
+  .flow .flow-step {
+    background: #1a1a2e; color: #fff; padding: 10px 18px;
+    border-radius: 8px; font-size: 10pt; font-weight: 600;
+    white-space: nowrap;
+  }
+  .flow .flow-arrow { color: #e8453c; font-size: 16pt; font-weight: 700; }
+
+  /* ===== NUMBER STATS ===== */
+  .stat-row { display: flex; gap: 16px; margin: 16px 0; }
+  .stat-card {
+    flex: 1; text-align: center; padding: 18px 12px;
+    border-radius: 10px; border: 1px solid #e5e5e5;
+  }
+  .stat-card .stat-num { font-size: 22pt; font-weight: 900; color: #e8453c; }
+  .stat-card .stat-label { font-size: 9.5pt; color: #777; margin-top: 4px; }
+
+  /* ===== PAGE BREAKS ===== */
+  .page-break { page-break-before: always; }
+
+  /* ===== FOOTER NOTE ===== */
+  .footer-note {
+    margin-top: 24px; padding: 14px 16px;
+    border-top: 2px solid #e5e5e5;
+    font-size: 9.5pt; color: #999; text-align: center;
+    line-height: 1.6;
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== COVER ===== -->
+<div class="cover">
+  <div class="ornament">ENTREPRENEURSHIP</div>
+  <div class="cover-content">
+    <div class="icon-row">🛒 💻</div>
+    <h1>摆摊创业完全指南</h1>
+    <div class="subtitle">线下摆摊 × 电子商铺 双线SOP</div>
+    <div class="divider"></div>
+    <div class="meta">
+      2026年5月版<br>
+      从零启动 · 全流程实操 · 持续更新
+    </div>
+    <div class="badge-row">
+      <div class="badge">实体摊位</div>
+      <div class="badge">电商网店</div>
+      <div class="badge">私域运营</div>
+    </div>
+  </div>
 </div>
 
-<h2>一、摆摊卖什么最赚钱？（2026年实地调研）</h2>
+<!-- ===== TOC ===== -->
+<div class="toc page-break">
+  <h2>目 录</h2>
 
+  <div class="part-title">第一部分 · 线下摆摊</div>
+  <div class="toc-item"><span class="toc-num">01</span><span class="toc-label">选品策略：卖什么最赚钱</span></div>
+  <div class="toc-item"><span class="toc-num">02</span><span class="toc-label">选址方法：决定80%收入</span></div>
+  <div class="toc-item"><span class="toc-num">03</span><span class="toc-label">进货渠道：成本直降30%</span></div>
+  <div class="toc-item"><span class="toc-num">04</span><span class="toc-label">定价策略与心理学技巧</span></div>
+  <div class="toc-item"><span class="toc-num">05</span><span class="toc-label">出摊SOP与物资清单</span></div>
+  <div class="toc-item"><span class="toc-num">06</span><span class="toc-label">避坑指南与合规提醒</span></div>
+  <div class="toc-item"><span class="toc-num">07</span><span class="toc-label">复盘模板与数据驱动优化</span></div>
+
+  <div class="part-title">第二部分 · 电子商铺</div>
+  <div class="toc-item"><span class="toc-num">08</span><span class="toc-label">电子商铺选平台：闲鱼/淘宝/拼多多/抖音</span></div>
+  <div class="toc-item"><span class="toc-num">09</span><span class="toc-label">闲鱼开店完整SOP</span></div>
+  <div class="toc-item"><span class="toc-num">10</span><span class="toc-label">拼多多虚拟店铺运营</span></div>
+  <div class="toc-item"><span class="toc-num">11</span><span class="toc-label">抖音/小红书内容引流</span></div>
+  <div class="toc-item"><span class="toc-num">12</span><span class="toc-label">私域流量池搭建与变现</span></div>
+
+  <div class="part-title">第三部分 · 双线联动</div>
+  <div class="toc-item"><span class="toc-num">13</span><span class="toc-label">线上线下联动增长模型</span></div>
+  <div class="toc-item"><span class="toc-num">14</span><span class="toc-label">从兼职到全职的进阶路径</span></div>
+  <div class="toc-item"><span class="toc-num">15</span><span class="toc-label">工具包与资源汇总</span></div>
+
+  <div style="margin-top:30px; padding-top:16px; border-top:1px solid #ddd; font-size:10pt; color:#999;">
+    <strong style="color:#e8453c;">使用建议：</strong>第一部分适合准备出摊的新手；第二部分适合想在线上卖货的朋友；建议两线并行，收益最大化。
+  </div>
+</div>
+
+<!-- ================================================================ -->
+<!-- PART 1: STREET VENDING -->
+<!-- ================================================================ -->
+
+<!-- ===== CH01: 选品策略 ===== -->
+<div class="section-page page-break">
+<div class="section-hero theme-orange">
+  <div class="part-label">· 第一部分 第一章 ·</div>
+  <h2>选品策略</h2>
+  <div class="accent-bar"></div>
+  <div class="section-desc">选对品，成功了一半。本章基于2026年实地调研数据，给出可操作的选品框架。</div>
+</div>
+<div class="section-body">
+
+<h3>选品三原则</h3>
+<div class="step-cards">
+  <div class="step-card"><div class="step-num">1</div><div class="step-title">高频消费</div><div class="step-desc">小吃 > 饮品 > 小商品 > 服装<br>刚需品复购率最高</div></div>
+  <div class="step-card"><div class="step-num">2</div><div class="step-title">毛利 > 60%</div><div class="step-desc">成本2元卖5元起步<br>低于50%毛利不做</div></div>
+  <div class="step-card"><div class="step-num">3</div><div class="step-title">单人可操作</div><div class="step-desc">一个人能完成全流程<br>不要太多工序依赖</div></div>
+</div>
+
+<h3>2026年品类全景对比</h3>
 <table>
-<tr><th>品类</th><th>启动资金</th><th>利润空间</th><th>日均收入</th><th>难度</th></tr>
-<tr><td>🥤 手打柠檬茶</td><td>2000-3000元</td><td>60-70%</td><td>300-800元</td><td>⭐⭐</td></tr>
-<tr><td>🍢 铁板鱿鱼/烤串</td><td>3000-5000元</td><td>50-60%</td><td>500-1500元</td><td>⭐⭐⭐</td></tr>
-<tr><td>🧸 毛绒玩具/盲盒</td><td>1500-3000元</td><td>40-50%</td><td>200-600元</td><td>⭐</td></tr>
-<tr><td>📱 手机贴膜/壳</td><td>500-1500元</td><td>70-80%</td><td>150-400元</td><td>⭐</td></tr>
-<tr><td>🍉 鲜切水果</td><td>1000-2000元</td><td>50-60%</td><td>200-500元</td><td>⭐⭐</td></tr>
-<tr><td>👕 潮流T恤/袜子</td><td>2000-4000元</td><td>40-55%</td><td>300-700元</td><td>⭐</td></tr>
-<tr><td>🌮 网红小吃（烤冷面等）</td><td>2000-4000元</td><td>55-65%</td><td>400-1000元</td><td>⭐⭐⭐</td></tr>
-<tr><td>💡 小夜灯/氛围灯</td><td>800-2000元</td><td>50-60%</td><td>150-400元</td><td>⭐</td></tr>
+<tr><th>品类</th><th>启动资金</th><th>利润空间</th><th>日均收入</th><th>上手难度</th><th>推荐指数</th></tr>
+<tr><td>🥤 手打柠檬茶</td><td>2000-3000元</td><td>60-70%</td><td>300-800元</td><td>⭐⭐</td><td>⭐⭐⭐⭐⭐</td></tr>
+<tr><td>🍢 铁板鱿鱼/烤串</td><td>3000-5000元</td><td>50-60%</td><td>500-1500元</td><td>⭐⭐⭐</td><td>⭐⭐⭐⭐</td></tr>
+<tr><td>🧸 毛绒玩具/盲盒</td><td>1500-3000元</td><td>40-50%</td><td>200-600元</td><td>⭐</td><td>⭐⭐⭐⭐</td></tr>
+<tr><td>📱 手机贴膜/壳</td><td>500-1500元</td><td>70-80%</td><td>150-400元</td><td>⭐</td><td>⭐⭐⭐</td></tr>
+<tr><td>🍉 鲜切水果</td><td>1000-2000元</td><td>50-60%</td><td>200-500元</td><td>⭐⭐</td><td>⭐⭐⭐</td></tr>
+<tr><td>👕 潮流T恤/袜子</td><td>2000-4000元</td><td>40-55%</td><td>300-700元</td><td>⭐</td><td>⭐⭐⭐</td></tr>
+<tr><td>🌮 烤冷面/网红小吃</td><td>2000-4000元</td><td>55-65%</td><td>400-1000元</td><td>⭐⭐⭐</td><td>⭐⭐⭐⭐</td></tr>
+<tr><td>💡 小夜灯/氛围灯</td><td>800-2000元</td><td>50-60%</td><td>150-400元</td><td>⭐</td><td>⭐⭐⭐</td></tr>
 </table>
 
-<p><strong>新手首推：</strong>手打柠檬茶（毛利高、技术门槛低、复购率高）或毛绒玩具（不用备货太多、不怕过期、城管来了好收）。</p>
+<h3>热销单品成本拆解</h3>
+<table>
+<tr><th>单品</th><th>单位成本</th><th>建议售价</th><th>毛利率</th><th>黄金时段</th><th>适合场景</th></tr>
+<tr><td>淀粉肠</td><td>0.3元/根</td><td>2-3元</td><td>85%+</td><td>放学/下班</td><td>学校门口</td></tr>
+<tr><td>手打柠檬茶</td><td>3元/杯</td><td>10-15元</td><td>70%+</td><td>下午/晚上</td><td>夜市/商圈</td></tr>
+<tr><td>烤面筋</td><td>0.5元/串</td><td>3-5元</td><td>80%+</td><td>晚上</td><td>夜市</td></tr>
+<tr><td>铁板鱿鱼</td><td>2元/串</td><td>8-10元</td><td>75%+</td><td>晚上</td><td>夜市/酒吧街</td></tr>
+<tr><td>脆皮烤肠</td><td>0.5元/根</td><td>3-5元</td><td>80%+</td><td>全天</td><td>学校/地铁口</td></tr>
+<tr><td>烤红薯</td><td>1元/个</td><td>5-8元</td><td>80%+</td><td>冬季全天</td><td>小区/公园</td></tr>
+<tr><td>冰粉/凉糕</td><td>1.5元/碗</td><td>6-8元</td><td>75%+</td><td>夏季下午</td><td>公园/夜市</td></tr>
+<tr><td>旋风土豆</td><td>0.8元/串</td><td>5-8元</td><td>84%+</td><td>放学/周末</td><td>学校/游乐园</td></tr>
+</table>
 
-<div class="ad">广告位</div>
+<div class="callout callout-tip">
+<strong>💡 新手首推：手打柠檬茶</strong>
+<ul>
+  <li>技术门槛最低：学3天就能出摊，失败率极低</li>
+  <li>夏季刚需+社交属性：顾客拍照发朋友圈=免费广告</li>
+  <li>毛利70%：每杯赚7-10元，一天卖40杯净赚300+</li>
+  <li>灵活机动：小推车就能做，城管来了好转移</li>
+</ul>
+</div>
 
-<h2>二、选址——决定你80%的收入</h2>
+<div class="callout callout-warn">
+<strong>⚠️ 选品禁区</strong>
+<ul>
+  <li>需要大型设备的（炸鸡炉、大型烤架）——太贵、搬不动</li>
+  <li>保质期极短的（鲜切刺身、生腌）——风险太高</li>
+  <li>审美极度细分的（手作饰品、小众服饰）——难批量复制</li>
+  <li>受政策影响大的（电子烟、盲盒类有争议产品）</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<!-- ===== CH02: 选址 ===== -->
+<div class="section-page page-break">
+<div class="section-hero theme-orange">
+  <div class="part-label">· 第一部分 第二章 ·</div>
+  <h2>选址方法</h2>
+  <div class="accent-bar"></div>
+  <div class="section-desc">选址决定80%的收入。好位置 > 好产品，这是摆摊的第一铁律。</div>
+</div>
+<div class="section-body">
 
 <h3>黄金位置排行榜</h3>
-<ol>
-  <li><strong>夜市/步行街入口</strong> — 人流量最大，但摊位费2000-5000/月</li>
-  <li><strong>大学城/地铁口</strong> — 年轻人多，消费意愿强。晚6-10点黄金时段</li>
-  <li><strong>小区门口/菜市场旁</strong> — 免费或低摊位费，稳定客流</li>
-  <li><strong>公园/广场周边</strong> — 周末人流大，适合玩具、小吃</li>
-  <li><strong>工地/工厂附近</strong> — 快餐类刚需，中午和傍晚爆单</li>
-</ol>
-
-<h3>踩点方法（出摊前必做）</h3>
-<ol>
-  <li>工作日+周末各去一次，记录每小时经过人数</li>
-  <li>观察同品类摊位有多少家、生意怎么样</li>
-  <li>找附近摊主聊天，问月租、城管情况、淡旺季</li>
-  <li>先不买东西，站在那里看30分钟——谁在买？买什么？多少钱？</li>
-</ol>
-
-<h2>三、进货渠道（成本省30%）</h2>
-
 <table>
-<tr><th>渠道</th><th>适合品类</th><th>优势</th><th>注意</th></tr>
-<tr><td>1688.com</td><td>玩具、袜子、小商品</td><td>价格最低</td><td>起批量大，先拿样品</td></tr>
-<tr><td>拼多多</td><td>手机壳、小夜灯</td><td>包邮、起批低</td><td>比1688贵10-20%</td></tr>
-<tr><td>当地批发市场</td><td>衣服、食品原料</td><td>可看实物</td><td>多比价</td></tr>
-<tr><td>闲鱼</td><td>二手设备、桌椅</td><td>省钱</td><td>看成色</td></tr>
+<tr><th>排名</th><th>位置</th><th>最佳时段</th><th>摊位费参考</th><th>适合品类</th><th>人流质量</th></tr>
+<tr><td>🥇</td><td>夜市/步行街入口</td><td>18:00-23:00</td><td>2000-5000/月</td><td>小吃、饮品</td><td>消费意愿强</td></tr>
+<tr><td>🥈</td><td>大学城/地铁口</td><td>17:00-22:00</td><td>500-1500/月</td><td>小吃、数码配件</td><td>年轻人多</td></tr>
+<tr><td>🥉</td><td>小区门口/菜市场</td><td>6:00-9:00 / 17:00-20:00</td><td>免费或低费</td><td>水果、早餐、熟食</td><td>稳定回头客</td></tr>
+<tr><td>4</td><td>公园/广场周边</td><td>周末全天</td><td>免费或按次</td><td>玩具、饮品</td><td>家庭客群</td></tr>
+<tr><td>5</td><td>工地/工厂附近</td><td>11:30-13:00 / 17:30-19:00</td><td>免费</td><td>快餐、盒饭</td><td>刚需高频</td></tr>
+<tr><td>6</td><td>写字楼/CBD周边</td><td>7:30-9:00 / 12:00-13:30</td><td>1500-3000/月</td><td>早餐、轻食、咖啡</td><td>客单价高</td></tr>
 </table>
 
-<div class="ad">广告位</div>
-
-<h2>四、定价策略</h2>
-
-<div class="highlight">
-<strong>💰 万能定价公式：</strong>成本 × 3 = 售价<br>
-例：柠檬茶成本3元 → 卖9-12元（夜市价）<br>
-<strong>心理定价：</strong>宁可9.9不要10元，宁可两个15不要一个8元
+<h3>选址踩点5步法</h3>
+<div class="step-cards">
+  <div class="step-card"><div class="step-num">1</div><div class="step-title">两天蹲点</div><div class="step-desc">工作日+周末各去一次<br>记录每小时经过人数</div></div>
+  <div class="step-card"><div class="step-num">2</div><div class="step-title">竞品摸排</div><div class="step-desc">统计同品类摊位数量<br>观察他们的生意状况</div></div>
+  <div class="step-card"><div class="step-num">3</div><div class="step-title">套话摊主</div><div class="step-desc">递烟聊天问月租、城管<br>淡旺季、真实收入</div></div>
+  <div class="step-card"><div class="step-num">4</div><div class="step-title">静观30分</div><div class="step-desc">不买东西站旁边看<br>谁在买、买什么、花多少</div></div>
+  <div class="step-card"><div class="step-num">5</div><div class="step-title">试跑3天</div><div class="step-desc">连续出摊3天验证<br>不理想果断换位置</div></div>
 </div>
 
-<h2>五、出摊实操清单</h2>
+<h3>选址评估打分表</h3>
+<table>
+<tr><th>评估维度</th><th>权重</th><th>评分标准</th><th>得分</th></tr>
+<tr><td>人流量</td><td>30%</td><td>高峰小时>500人=5分, 200-500=3分, <200=1分</td><td>__/5</td></tr>
+<tr><td>停留意愿</td><td>20%</td><td>闲逛型=5分, 路过型=3分, 赶路型=1分</td><td>__/5</td></tr>
+<tr><td>竞品数量</td><td>20%</td><td>0家=5分, 1-2家=3分, 3-5家=2分, >5家=1分</td><td>__/5</td></tr>
+<tr><td>摊位费占比</td><td>15%</td><td><日均营收10%=5分, 10-20%=3分, >30%=1分</td><td>__/5</td></tr>
+<tr><td>城管风险</td><td>10%</td><td>合法/容忍=5分, 偶尔驱赶=3分, 严管=1分</td><td>__/5</td></tr>
+<tr><td>交通便利</td><td>5%</td><td>离家<15分钟=5分, 15-30分钟=3分, >30分钟=1分</td><td>__/5</td></tr>
+<tr style="background:#fff8e1;"><td><strong>加权总分</strong></td><td>100%</td><td colspan="2"><strong>≥3.5分可入场，≥4.0分优质位置，<3.0分果断放弃</strong></td></tr>
+</table>
 
-<ol>
-  <li><strong>提前30分钟到</strong>，摆好货品、灯光、收款码</li>
-  <li><strong>灯光是灵魂</strong>——买个充电LED灯带，亮=生意好</li>
-  <li><strong>主动吆喝</strong>——"新鲜现做！尝尝看！"比干站着多卖50%</li>
-  <li><strong>准备现金零钱</strong>——虽然90%扫码，但总有老人给现金</li>
-  <li><strong>拍视频发抖音</strong>——出摊就拍，发定位，附近的人能刷到</li>
-  <li><strong>加微信</strong>——"加好友下次打9折"，建自己的私域客户群</li>
-  <li><strong>记住熟客</strong>——"姐你又来了！今天还是老样子？"——复购率翻倍</li>
-</ol>
-
-<h2>六、避坑指南（血泪教训）</h2>
-
-<ol>
-  <li><strong>不要一上来就租固定摊位</strong>——先跑几天流动摊试水</li>
-  <li><strong>不要备太多货</strong>——第一批货宁少勿多，卖得好再补</li>
-  <li><strong>不要跟隔壁摊主打价格战</strong>——降价就是一起死</li>
-  <li><strong>食品类必须办健康证</strong>——被查到罚款500-2000</li>
-  <li><strong>和城管搞好关系</strong>——态度好、配合收拾，大多数不会为难你</li>
-  <li><strong>天气=收入</strong>——下雨天不出摊，别硬撑</li>
-</ol>
-
-<h2>七、每日复盘模板</h2>
-
-<pre>日期：
-出摊时间：____ 到 ____
-位置：
-天气：
-总销售额：¥____
-成本：¥____（原料+摊位费+交通）
-净利润：¥____
-卖最好的品：
-明天改进：</pre>
-
-<div class="ad">广告位</div>
-
-<h2>八、常见问题</h2>
-
-<p><strong>Q: 一个人能摆摊吗？</strong><br>A: 大多数摊位一个人完全够。忙的时候可以叫家人帮忙。</p>
-
-<p><strong>Q: 摆摊需要办证吗？</strong><br>A: 食品类需要健康证（疾控中心办，100元左右）。其他品类一般不需要。固定摊位可能需要街道备案。</p>
-
-<p><strong>Q: 摆摊能赚多少钱？</strong><br>A: 新手第一个月日均200-500很正常。熟练后（第3个月起），小吃类日均500-1500，百货类日均200-600。</p>
-
-<p style="text-align:center;margin-top:30px"><a href="/">← 返回工具箱首页</a></p>
+<div class="callout callout-danger">
+<strong>🚫 选址避雷信号</strong>
+<ul>
+  <li>一条街上同品类超过5家 → 红海市场，新手别碰</li>
+  <li>摊位费超过预期日均营收的30% → 你在替房东打工</li>
+  <li>城管一天来赶3次以上 → 换个区，总有宽容的地方</li>
+  <li>路过人群80%是老年人 → 消费意愿和品类匹配度低</li>
+  <li>周末都没什么人 → 平日更惨，直接排除</li>
+</ul>
+</div>
 
 </div>
-<div class="footer"><p>在线工具箱 © 2026 · <a href="/">返回首页</a></p></div>
-</body></html>
+</div>
+
+<!-- ===== CH03: 进货渠道 ===== -->
+<div class="section-page page-break">
+<div class="section-hero theme-orange">
+  <div class="part-label">· 第一部分 第三章 ·</div>
+  <h2>进货渠道</h2>
+  <div class="accent-bar"></div>
+  <div class="section-desc">找对渠道，成本降30%。不同品类有不同的最优进货路径。</div>
+</div>
+<div class="section-body">
+
+<h3>五大渠道横向对比</h3>
+<table>
+<tr><th>渠道</th><th>适合品类</th><th>价格水平</th><th>起批量</th><th>退货难度</th><th>适合阶段</th></tr>
+<tr><td>1688.com</td><td>玩具、日用、袜子、小商品</td><td>最低（源头价）</td><td>中高</td><td>中</td><td>稳定期后</td></tr>
+<tr><td>拼多多</td><td>手机壳、小夜灯、小件</td><td>比1688贵10-20%</td><td>极低（1件起）</td><td>极易</td><td>试水期首选</td></tr>
+<tr><td>当地批发市场</td><td>衣服、食品原料、生鲜</td><td>可谈可压价</td><td>灵活</td><td>当场验货</td><td>全阶段</td></tr>
+<tr><td>闲鱼</td><td>二手设备、桌椅、推车</td><td>最低（二手价）</td><td>1件</td><td>看卖家</td><td>启动期</td></tr>
+<tr><td>抖音/快手</td><td>网红新品、创意玩具</td><td>中高</td><td>低</td><td>中</td><td>跟热点时</td></tr>
+</table>
+
+<h3>进货黄金法则</h3>
+
+<div class="callout callout-tip">
+<strong>💰 核心原则：先卖后进，宁少勿多</strong>
+<ul>
+  <li><strong>首批数量</strong>：每个SKU 50个以内，卖得好再补，绝不囤货</li>
+  <li><strong>先卖后进</strong>：不确定的品先挂出来接单，有人拍了再进货</li>
+  <li><strong>同城优先</strong>：食品类必须同城批发市场，新鲜+运费低</li>
+  <li><strong>关系维护</strong>：头两次全款建立信任，熟了可以谈赊账</li>
+  <li><strong>每周比价</strong>：同样的货不同渠道价格可能差30%，定期刷新</li>
+</ul>
+</div>
+
+<h3>常见品类最优进货方案</h3>
+<table>
+<tr><th>品类</th><th>首选渠道</th><th>备选渠道</th><th>首批预算</th><th>注意事项</th></tr>
+<tr><td>柠檬茶原料</td><td>当地水果批发市场</td><td>美团快驴</td><td>500-800元</td><td>柠檬要现挑，网购容易坏</td></tr>
+<tr><td>烧烤食材</td><td>当地冻品批发市场</td><td>美菜网</td><td>800-1200元</td><td>串好再出摊省时间</td></tr>
+<tr><td>手机配件</td><td>1688（深圳华强北）</td><td>拼多多</td><td>300-500元</td><td>不同机型各拿20个先试</td></tr>
+<tr><td>毛绒玩具</td><td>1688（扬州产地）</td><td>拼多多</td><td>500-1000元</td><td>选可机洗的，家长才放心</td></tr>
+<tr><td>T恤/袜子</td><td>1688（广州沙河）</td><td>当地服装批发</td><td>800-1500元</td><td>码数要全，颜色选基础色</td></tr>
+<tr><td>小夜灯/氛围灯</td><td>1688（中山古镇）</td><td>拼多多</td><td>300-600元</td><td>选USB充电款，比电池款好卖</td></tr>
+</table>
+
+</div>
+</div>
+
+<!-- ===== CH04: 定价策略 ===== -->
+<div class="section-page page-break">
+<div class="section-hero theme-orange">
+  <div class="part-label">· 第一部分 第四章 ·</div>
+  <h2>定价策略与心理学</h2>
+  <div class="accent-bar"></div>
+  <div class="section-desc">定价不是猜出来的，是算出来的。用心理学让顾客觉得"赚到了"。</div>
+</div>
+<div class="section-body">
+
+<div class="formula-box">
+  <div style="font-size:10pt; opacity:0.7; letter-spacing:2px;">万能定价公式</div>
+  <div class="formula">食材/商品 → 成本 × 3 = 售价</div>
+  <div class="formula" style="font-size:14pt; margin-top:4px;">服务/手工 → 成本 × 4~5 = 售价</div>
+</div>
+
+<h3>定价实操案例</h3>
+<table>
+<tr><th>产品</th><th>成本</th><th>公式</th><th>售价</th><th>每单利润</th></tr>
+<tr><td>手打柠檬茶</td><td>3元</td><td>3×3~4</td><td>9-12元</td><td>6-9元</td></tr>
+<tr><td>铁板鱿鱼串</td><td>2元</td><td>2×4</td><td>8-10元</td><td>6-8元</td></tr>
+<tr><td>手机贴膜（含手工）</td><td>2元+人工</td><td>2×8~10</td><td>15-20元</td><td>13-18元</td></tr>
+<tr><td>潮流T恤</td><td>15元</td><td>15×3</td><td>39-49元</td><td>24-34元</td></tr>
+<tr><td>网红玩具</td><td>8元</td><td>8×3</td><td>25-30元</td><td>17-22元</td></tr>
+</table>
+
+<h3>六大心理定价法</h3>
+<table>
+<tr><th>技巧</th><th>操作方式</th><th>示例</th><th>效果</th></tr>
+<tr><td>尾数9.9</td><td>永远标x.9不标整数</td><td>9.9元 vs 10元</td><td>心理感知便宜一个档次</td></tr>
+<tr><td>锚定效应</td><td>先放高价再放低价</td><td>大杯15 / 中杯12 / 小杯9</td><td>大多数人选中杯</td></tr>
+<tr><td>套餐捆绑</td><td>组合售卖提高客单价</td><td>两个15元 vs 一个8元</td><td>多卖50%数量</td></tr>
+<tr><td>限时稀缺</td><td>限时限量制造紧迫</td><td>"前10杯特价9.9"</td><td>触发从众+损失厌恶</td></tr>
+<tr><td>满赠送</td><td>设置凑单门槛</td><td>"满30送纸巾一包"</td><td>客单价拉高20-30%</td></tr>
+<tr><td>对比定价</td><td>引入高价参照物</td><td>"比奶茶店便宜一半"</td><td>重新锚定价值认知</td></tr>
+</table>
+
+<h3>动态调价策略</h3>
+<table>
+<tr><th>场景</th><th>策略</th><th>操作</th></tr>
+<tr><td>新摊位开业</td><td>渗透定价</td><td>前3天打8折，攒人气和复购</td></tr>
+<tr><td>天气好+人多</td><td>维持原价</td><td>不需要降，好日子多赚</td></tr>
+<tr><td>下雨天/淡季</td><td>小幅降价</td><td>降10-15%保本出清，别亏就行</td></tr>
+<tr><td>回头客</td><td>隐形优惠</td><td>"姐给你多加点料"，不直接降价</td></tr>
+<tr><td>上了新品</td><td>搭售促销</td><td>"买新品送老品小份试吃"</td></tr>
+<tr><td>生意稳定后</td><td>小幅涨价</td><td>每3个月涨1-2元，顾客感知不强</td></tr>
+</table>
+
+<div class="callout callout-warn">
+<strong>⚠️ 定价三大忌</strong>
+<ul>
+  <li>❌ 一上来就比隔壁便宜——价格战没有赢家，在服务和品质上做差异化</li>
+  <li>❌ 频繁改价——熟客发现被宰直接拉黑，一旦定了就保持稳定</li>
+  <li>❌ 不计算隐形成本——燃气、耗材、交通、折旧都要算进成本</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<!-- ===== CH05: 出摊SOP ===== -->
+<div class="section-page page-break">
+<div class="section-hero theme-orange">
+  <div class="part-label">· 第一部分 第五章 ·</div>
+  <h2>出摊SOP与物资清单</h2>
+  <div class="accent-bar"></div>
+  <div class="section-desc">标准化流程让你每天从容出摊，不丢三落四，效率最大化。</div>
+</div>
+<div class="section-body">
+
+<h3>出摊前夜准备清单</h3>
+<div class="checklist">
+  <div class="check-item"><div class="check-box"></div>确认明日天气预报（下雨概率>50%或大风黄色预警→果断取消）</div>
+  <div class="check-item"><div class="check-box"></div>备好次日食材/货品：该腌的腌、该切的切、该打包的打包</div>
+  <div class="check-item"><div class="check-box"></div>充电：LED灯带、蓝牙音响、充电宝（至少2块）、手机</div>
+  <div class="check-item"><div class="check-box"></div>检查二维码：微信和支付宝各扫1分钱测试，确保能正常收款</div>
+  <div class="check-item"><div class="check-box"></div>备好零钱：1元硬币×20 + 5元×10 + 10元×10，合计约¥200</div>
+  <div class="check-item"><div class="check-box"></div>确认出摊位置（流动摊需确认今晚去哪）</div>
+  <div class="check-item"><div class="check-box"></div>手机充满电，带上充电线</div>
+</div>
+
+<h3>出摊当天SOP时间线</h3>
+<table>
+<tr><th>时间</th><th>动作</th><th>要点</th></tr>
+<tr><td>出摊前1h</td><td>最终物资检查</td><td>对照物资清单逐一清点，缺的赶紧补</td></tr>
+<tr><td>提前30min</td><td>到达位置</td><td>摆好货品、点亮灯光、挂好收款码</td></tr>
+<tr><td>开摊</td><td>灯光+音响全开</td><td>灯光=生意信号，越亮越吸引人</td></tr>
+<tr><td>营业中</td><td>主动吆喝揽客</td><td>"新鲜现做！来尝尝看！"比干站着多卖50%</td></tr>
+<tr><td>空闲时</td><td>拍短视频发抖音</td><td>带定位发，附近的人刷到就来</td></tr>
+<tr><td>收摊前30min</td><td>打折清库存</td><td>食品类当天清完，别留到第二天</td></tr>
+<tr><td>收摊</td><td>收拾打扫卫生</td><td>留好印象比多卖10块钱重要100倍</td></tr>
+<tr><td>到家</td><td>记账+复盘</td><td>用第七章模板，10分钟搞定</td></tr>
+</table>
+
+<h3>出摊物资总清单</h3>
+
+<h4>🅐 基础装备（一次性投入 ~¥800-1500）</h4>
+<table>
+<tr><th>物品</th><th>预算</th><th>购买渠道</th><th>备注</th></tr>
+<tr><td>推车/折叠桌</td><td>¥200-500</td><td>闲鱼二手</td><td>优先二手，省钱50%</td></tr>
+<tr><td>炉具/烤架/铁板</td><td>¥200-400</td><td>1688/批发市场</td><td>食品类核心装备</td></tr>
+<tr><td>LED充电灯带（2-3条）</td><td>¥30-80</td><td>拼多多</td><td>暖白光最好，省电又亮</td></tr>
+<tr><td>大容量充电宝（2块）</td><td>¥50-100</td><td>京东/小米</td><td>20000mAh起步</td></tr>
+<tr><td>收款码（微信+支付宝）</td><td>¥5-10</td><td>打印店</td><td>塑封防水</td></tr>
+<tr><td>零钱储备</td><td>¥200</td><td>银行/便利店</td><td>虽然90%扫码，但要有</td></tr>
+</table>
+
+<h4>🅑 耗材（每批 ~¥200-400）</h4>
+<table>
+<tr><th>物品</th><th>预算</th><th>备注</th></tr>
+<tr><td>打包盒/袋子</td><td>¥100-200/批</td><td>算好日均消耗，多买便宜</td></tr>
+<tr><td>筷子/吸管/纸巾</td><td>¥30-50/批</td><td>小东西多备，别让顾客等</td></tr>
+<tr><td>一次性手套+口罩</td><td>¥20-30/批</td><td>食品类必须，卫生第一</td></tr>
+<tr><td>竹签/锡纸/油纸</td><td>¥15-25/批</td><td>烧烤/小吃类耗材</td></tr>
+</table>
+
+<h4>🅒 加分装备（按需选配）</h4>
+<table>
+<tr><th>物品</th><th>预算</th><th>作用</th></tr>
+<tr><td>蓝牙小音响</td><td>¥50-100</td><td>放音乐/叫卖录音吸引注意力</td></tr>
+<tr><td>小黑板/价格牌</td><td>¥20-40</td><td>写清价格，路人不用开口问</td></tr>
+<tr><td>折叠凳</td><td>¥15-30</td><td>空闲时休息，别一直站着</td></tr>
+<tr><td>手机三脚架</td><td>¥30-60</td><td>拍视频/直播，流量=销量</td></tr>
+<tr><td>小灭火器</td><td>¥30-50</td><td>明火摊位安全必备</td></tr>
+<tr><td>围裙（带logo更好）</td><td>¥20-40</td><td>显得专业，增加信任感</td></tr>
+</table>
+
+</div>
+</div>
+
+<!-- ===== CH06: 避坑指南 ===== -->
+<div class="section-page page-break">
+<div class="section-hero theme-orange">
+  <div class="part-label">· 第一部分 第六章 ·</div>
+  <h2>避坑指南与合规</h2>
+  <div class="accent-bar"></div>
+  <div class="section-desc">这些坑每个都有人踩过，看完直接跳过，省下几千块学费。</div>
+</div>
+<div class="section-body">
+
+<h3>新手十大常见错误排行榜</h3>
+<table>
+<tr><th>排名</th><th>错误做法</th><th>直接后果</th><th>正确做法</th></tr>
+<tr><td>🔴 1</td><td>一上来就租固定摊位</td><td>赔几千租金才发现位置不行</td><td>先流动跑3天，确认客流再谈</td></tr>
+<tr><td>🔴 2</td><td>第一批备太多货</td><td>资金全压在库存上，过期/过季报废</td><td>每种最多50份，卖完再补</td></tr>
+<tr><td>🔴 3</td><td>跟隔壁打价格战</td><td>利润归零，双双退出</td><td>差异化竞争：口味/包装/服务</td></tr>
+<tr><td>🟡 4</td><td>选太偏的位置</td><td>一天卖不够100块</td><td>按第二章踩点法验证后再定</td></tr>
+<tr><td>🟡 5</td><td>定价过低没利润</td><td>白忙活一个月，不如打工</td><td>成本×3起步，别怕贵</td></tr>
+<tr><td>🟡 6</td><td>忽视卫生条件</td><td>顾客看一眼就走，被举报罚款</td><td>围裙+手套+口罩+台面干净</td></tr>
+<tr><td>🟡 7</td><td>不加顾客微信</td><td>每次都是新客，没有回头客</td><td>"加好友下次9折"，建私域池</td></tr>
+<tr><td>🟢 8</td><td>下雨天硬撑</td><td>人淋湿、货淋坏、还没生意</td><td>下雨天不出摊，休息充电</td></tr>
+<tr><td>🟢 9</td><td>不吆喝不宣传</td><td>路过的人不知道你卖什么</td><td>至少说"好吃的XX！来尝尝！"</td></tr>
+<tr><td>🟢 10</td><td>不记账不复盘</td><td>赚不赚钱全靠感觉</td><td>每天10分钟用第七章模板</td></tr>
+</table>
+
+<h3>合规自查清单</h3>
+<table>
+<tr><th>合规事项</th><th>是否必需</th><th>办理方式</th><th>费用</th></tr>
+<tr><td>健康证</td><td>食品类必需</td><td>当地疾控中心体检办理</td><td>约¥100</td></tr>
+<tr><td>食品经营许可证</td><td>固定摊位可能需要</td><td>市场监管局咨询</td><td>视地区</td></tr>
+<tr><td>街道备案登记</td><td>固定摊位建议办</td><td>所在街道办/城管中队</td><td>通常免费</td></tr>
+<tr><td>营业执照</td><td>非必需但有利</td><td>市场监管局</td><td>视地区</td></tr>
+<tr><td>食品安全责任险</td><td>建议购买</td><td>保险公司/支付宝</td><td>约¥200/年</td></tr>
+</table>
+
+<div class="callout callout-info">
+<strong>📋 与城管相处的正确姿势</strong>
+<ul>
+  <li>态度第一：配合收拾，不要吵，不要抬杠</li>
+  <li>先到先得：大多数地方的摊位是"先到先占"，不是固定分配的</li>
+  <li>信息互通：和周边摊主搞好关系，城管来了互相通知</li>
+  <li>备用位置：准备2-3个可选位置，这个被赶了去那个</li>
+  <li>合法化是大趋势：越来越多城市在划设"便民摊点"，主动关注政策</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<!-- ===== CH07: 复盘 ===== -->
+<div class="section-page page-break">
+<div class="section-hero theme-orange">
+  <div class="part-label">· 第一部分 第七章 ·</div>
+  <h2>复盘与数据优化</h2>
+  <div class="accent-bar"></div>
+  <div class="section-desc">不会复盘的人，摆一年摊还是新手。每天10分钟，三个月成老手。</div>
+</div>
+<div class="section-body">
+
+<h3>每日复盘模板</h3>
+<div style="background:#fafafa; border:2px solid #1a1a2e; border-radius:12px; padding:20px; font-family:'Courier New',monospace; font-size:10pt; line-height:2; white-space:pre;">
+╔══════════════════════════════════════╗
+║        📊 摆摊日报 · 复盘模板        ║
+╚══════════════════════════════════════╝
+
+📅 日期：______年____月____日  星期____
+⏰ 出摊：______ ～ ______  (共计____小时)
+📍 位置：_________________________
+🌤️ 天气：______  温度：______℃
+
+━━━━━━━━━ 💰 收入明细 ━━━━━━━━━
+
+  现金：        ¥________
+  微信：        ¥________
+  支付宝：      ¥________
+  ─────────────────────
+  总收入：      ¥________
+
+━━━━━━━━━ 💸 成本明细 ━━━━━━━━━
+
+  食材/货品：   ¥________
+  摊位费：      ¥________
+  燃气/电费：   ¥________
+  耗材（盒/袋）：¥________
+  交通：        ¥________
+  其他：        ¥________
+  ─────────────────────
+  总成本：      ¥________
+
+━━━━━━━━━ 📈 关键指标 ━━━━━━━━━
+
+  净利润：      ¥________
+  利润率：      ________%
+  客单数：      ________单
+  平均客单价：  ¥________
+
+━━━━━━━━━ 🏆 商品分析 ━━━━━━━━━
+
+  卖最好的品：  ________ (____份)
+  卖不动的品：  ________ (____份)
+  最赚钱的品：  ________ (利润率____%)
+
+━━━━━━━━━ 💡 每日反思 ━━━━━━━━━
+
+  今天做对了什么：
+  _________________________________
+
+  今天哪里可以改进：
+  _________________________________
+
+  客人提了什么反馈：
+  _________________________________
+
+  明天最重要的1件事：
+  _________________________________
+</div>
+
+<h3>周度数据看板</h3>
+<table>
+<tr><th>指标</th><th>周一</th><th>周二</th><th>周三</th><th>周四</th><th>周五</th><th>周六</th><th>周日</th><th>周合计</th></tr>
+<tr><td>出摊时长(h)</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>总收入</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>总成本</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>净利润</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>客单数</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>天气</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>—</td></tr>
+</table>
+
+<h3>数据驱动决策：什么情况下该做什么</h3>
+<table>
+<tr><th>数据信号</th><th>含义</th><th>行动</th></tr>
+<tr><td>连续3天客单数<15</td><td>位置或品类有问题</td><td>换位置 or 换品 or 换时段</td></tr>
+<tr><td>利润率<40%持续一周</td><td>成本控制或定价有问题</td><td>找替代原料 or 提价1-2元</td></tr>
+<tr><td>复购率<20%（月）</td><td>产品力或服务不行</td><td>改进口味/包装/服务态度</td></tr>
+<tr><td>周末收入 < 工作日×1.5</td><td>地段不对（非周末型）</td><td>周末换到高人流位置</td></tr>
+<tr><td>某个品占总收入>60%</td><td>找到了主打款</td><td>聚焦做透这个品，优化效率</td></tr>
+<tr><td>某个品连续7天卖<3份</td><td>该品可以砍掉</td><td>清仓处理，不再进货</td></tr>
+</table>
+
+</div>
+</div>
+
+<!-- ================================================================ -->
+<!-- PART 2: E-COMMERCE / ONLINE STORES -->
+<!-- ================================================================ -->
+
+<!-- ===== CH08: 电子商铺选平台 ===== -->
+<div class="section-page page-break">
+<div class="section-hero theme-blue">
+  <div class="part-label">· 第二部分 第八章 ·</div>
+  <h2>电子商铺选平台</h2>
+  <div class="accent-bar"></div>
+  <div class="section-desc">不摆摊也能赚钱。选对平台，用信息差和内容力赚到第一桶金。</div>
+</div>
+<div class="section-body">
+
+<h3>四大平台能力对比</h3>
+<table>
+<tr><th>平台</th><th>适合品类</th><th>启动门槛</th><th>流量获取</th><th>利润率</th><th>适合人群</th></tr>
+<tr><td>🐟 闲鱼</td><td>虚拟资料、二手、轻定制</td><td>零门槛</td><td>自然流量+擦亮</td><td>70-95%</td><td>新手首选</td></tr>
+<tr><td>🔴 拼多多</td><td>低价小商品、素材、教程</td><td>押金1000起</td><td>低价+投流</td><td>30-60%</td><td>有运营经验</td></tr>
+<tr><td>📕 小红书</td><td>生活方式、教程、咨询</td><td>零门槛</td><td>内容引流</td><td>60-90%</td><td>会做内容</td></tr>
+<tr><td>🎵 抖音</td><td>快消品、食品、新奇特</td><td>零门槛(小黄车需1000粉)</td><td>短视频+直播</td><td>40-70%</td><td>愿意出镜</td></tr>
+</table>
+
+<h3>新手入场优先级推荐</h3>
+
+<div class="flow">
+  <div class="flow-step">🐟 闲鱼<br><small>第1周</small></div>
+  <div class="flow-arrow">→</div>
+  <div class="flow-step">📕 小红书<br><small>第2周起</small></div>
+  <div class="flow-arrow">→</div>
+  <div class="flow-step">🔴 拼多多<br><small>第1个月</small></div>
+  <div class="flow-arrow">→</div>
+  <div class="flow-step">🎵 抖音<br><small>第2个月</small></div>
+</div>
+<p style="text-align:center; font-size:10pt; color:#777;">先从零门槛的闲鱼开始跑通变现闭环，再逐步扩展多平台</p>
+
+<h3>2026年热销虚拟/数字产品品类</h3>
+<table>
+<tr><th>品类</th><th>平台</th><th>价格带</th><th>月销参考</th><th>制作难度</th><th>利润</th></tr>
+<tr><td>AI指令/提示词合集</td><td>闲鱼/拼多多</td><td>¥6.9-19.9</td><td>2000+</td><td>⭐⭐</td><td>90%+</td></tr>
+<tr><td>简历/PPT模板</td><td>闲鱼</td><td>¥4.9-9.9</td><td>5000+</td><td>⭐</td><td>95%+</td></tr>
+<tr><td>电商主图设计参考</td><td>闲鱼/拼多多</td><td>¥9.9-29.9</td><td>3000+</td><td>⭐⭐</td><td>90%+</td></tr>
+<tr><td>短视频脚本/素材包</td><td>拼多多/抖音</td><td>¥9.9-39.9</td><td>高</td><td>⭐⭐⭐</td><td>85%+</td></tr>
+<tr><td>直播间背景素材</td><td>拼多多</td><td>¥9.9-19.9</td><td>万件</td><td>⭐⭐</td><td>90%+</td></tr>
+<tr><td>小吃/饮品配方合集</td><td>闲鱼/拼多多</td><td>¥9.9-19.9</td><td>2000+</td><td>⭐⭐</td><td>90%+</td></tr>
+<tr><td>考试/教辅资料</td><td>闲鱼</td><td>¥6.8-19.9</td><td>5000+</td><td>⭐</td><td>95%+</td></tr>
+<tr><td>高情商话术库</td><td>闲鱼/拼多多</td><td>¥6.8-15.9</td><td>3000+</td><td>⭐⭐</td><td>90%+</td></tr>
+<tr><td>减肥/健身计划</td><td>闲鱼/小红书</td><td>¥9.9-29.9</td><td>2000+</td><td>⭐⭐⭐</td><td>85%+</td></tr>
+<tr><td>玄学/星座运势</td><td>闲鱼</td><td>¥0.5-5</td><td>极高</td><td>⭐</td><td>99%+</td></tr>
+</table>
+
+</div>
+</div>
+
+<!-- ===== CH09: 闲鱼开店SOP ===== -->
+<div class="section-page page-break">
+<div class="section-hero theme-blue">
+  <div class="part-label">· 第二部分 第九章 ·</div>
+  <h2>闲鱼开店完整SOP</h2>
+  <div class="accent-bar"></div>
+  <div class="section-desc">零成本启动，当天出单。闲鱼是电子商铺入门的最佳平台。</div>
+</div>
+<div class="section-body">
+
+<h3>为什么先做闲鱼？</h3>
+<div class="stat-row">
+  <div class="stat-card"><div class="stat-num">0元</div><div class="stat-label">开店成本</div></div>
+  <div class="stat-card"><div class="stat-num">5亿+</div><div class="stat-label">月活用户</div></div>
+  <div class="stat-card"><div class="stat-num">70-95%</div><div class="stat-label">虚拟品毛利</div></div>
+  <div class="stat-card"><div class="stat-num">当天</div><div class="stat-label">可出首单</div></div>
+</div>
+
+<h3>Step 1：账号准备与养号（第1-2天）</h3>
+<table>
+<tr><th>步骤</th><th>操作</th><th>要点</th></tr>
+<tr><td>注册</td><td>支付宝实名认证 → 闲鱼登录</td><td>一证一店，用自己真实的号</td></tr>
+<tr><td>完善资料</td><td>头像（真实/亲和）+ 昵称 + 简介</td><td>别像营销号，像真人卖家</td></tr>
+<tr><td>养号</td><td>每天刷10分钟+互动5次+收藏3个</td><td>模拟真实用户行为，持续2-3天</td></tr>
+<tr><td>关联</td><td>绑定芝麻信用（650+亮信用标）</td><td>信用越好，排名越高</td></tr>
+<tr><td>认证</td><td>完成实名+人脸认证</td><td>认证过的号曝光更高</td></tr>
+</table>
+
+<div class="callout callout-tip">
+<strong>💡 养号的核心逻辑</strong>
+闲鱼的算法会判断你是不是"真人活跃用户"。刚注册就疯狂上架会被判为营销号降权。前2-3天像个普通用户一样逛、搜、互动，之后再开始卖东西。
+</div>
+
+<h3>Step 2：选品与调研（第3天）</h3>
+<table>
+<tr><th>方法</th><th>操作</th><th>判断标准</th></tr>
+<tr><td>搜索验证</td><td>搜你要卖的关键词，看搜索结果数量</td><td>结果<500=蓝海，500-2000=竞争适中，>2000=红海</td></tr>
+<tr><td>我想要跟踪</td><td>找Top10同行的宝贝，点"我想要"</td><td>记录24h/48h后"想要"数，判断真实销量</td></tr>
+<tr><td>评价分析</td><td>看同行评价，找差评中的痛点</td><td>"内容太少""不值"→你做更丰富的版本</td></tr>
+<tr><td>价格带定位</td><td>同行卖9.9，你卖9.9~12.9</td><td>不卷低价，在内容量上做差异化</td></tr>
+</table>
+
+<h3>Step 3：商品上架SOP</h3>
+
+<h4>标题公式（30字充分利用）</h4>
+<div class="formula-box" style="font-size:12pt;">
+  <strong>核心词</strong> + <strong>场景词</strong> + <strong>人群词</strong> + <strong>差异化词</strong>
+</div>
+<p><strong>示例：</strong></p>
+<ul>
+  <li>❌ 差标题：「卖一份摆摊教程」</li>
+  <li>✅ 好标题：「<strong>2026摆摊创业指南</strong> | <strong>选址选品配方</strong> | <strong>新手入门参考</strong> | <strong>持续更新</strong>」</li>
+</ul>
+
+<h4>文案结构模板</h4>
+<div style="background:#f8f8f8; border-radius:8px; padding:16px; font-size:10.5pt; line-height:1.8;">
+<strong>【 说在前面 】</strong><br>
+个人收集整理的XXX参考，花费大量时间整理，适合XXX人群。<br><br>
+<strong>【 内容包含 】</strong><br>
+✅ 模块1：XXX（XX条/页）<br>
+✅ 模块2：XXX（含XXX）<br>
+✅ 模块3：XXX（附XXX）<br><br>
+<strong>【 特点 】</strong><br>
+🔸 特点1：一句话说清优势<br>
+🔸 特点2：和同行的差别<br><br>
+<strong>【 发货说明 】</strong><br>
+拍下后发送网盘链接 | 无需物流 | 永久有效<br><br>
+<strong>【 声明 】</strong><br>
+个人整理，仅供参考交流。
+</div>
+
+<h4>图片策略</h4>
+<ul>
+  <li><strong>图1（主图）</strong>：精美封面，大字突出产品名+核心卖点</li>
+  <li><strong>图2</strong>：内容目录/大纲截图</li>
+  <li><strong>图3</strong>：部分内容预览（打码部分关键内容）</li>
+  <li><strong>图4</strong>：和其他产品的对比图（你 vs 别人的差异）</li>
+  <li><strong>图5</strong>：使用说明/发货说明</li>
+</ul>
+
+<h3>Step 4：发布后的运营动作</h3>
+<table>
+<tr><th>动作</th><th>频率</th><th>说明</th></tr>
+<tr><td>擦亮</td><td>每天1次</td><td>每个商品每天可擦亮1次提升曝光</td></tr>
+<tr><td>编辑重发</td><td>每3天</td><td>微调标题/图片/价格后重新发布</td></tr>
+<tr><td>加入鱼塘</td><td>持续</td><td>加入相关鱼塘，发商品到鱼塘</td></tr>
+<tr><td>回复速度</td><td>5分钟内</td><td>响应越快，系统给的权重越高</td></tr>
+<tr><td>引导好评</td><td>成交后</td><td>"满意的话给个好评，下次有更新免费送"</td></tr>
+<tr><td>数据记录</td><td>每天</td><td>曝光/浏览/想要/成交，持续优化</td></tr>
+</table>
+
+<div class="callout callout-danger">
+<strong>🚫 闲鱼避封指南</strong>
+<ul>
+  <li>不要在聊天中说"加微信"——会被系统检测，说"网盘链接"</li>
+  <li>不要卖盗版/侵权资料——个人整理原创内容最安全</li>
+  <li>虚拟商品选"无需寄送"发货方式</li>
+  <li>标题和文案避免使用"教程""课程"等培训类敏感词，用"指南""参考""整理"替代</li>
+  <li>不要在描述中放外链，所有链接通过聊天发送</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<!-- ===== CH10: 拼多多虚拟店铺 ===== -->
+<div class="section-page page-break">
+<div class="section-hero theme-blue">
+  <div class="part-label">· 第二部分 第十章 ·</div>
+  <h2>拼多多虚拟店铺运营</h2>
+  <div class="accent-bar"></div>
+  <div class="section-desc">拼多多是虚拟商品的大蓝海。78家商家分万件销量，机会巨大。</div>
+</div>
+<div class="section-body">
+
+<h3>拼多多 vs 闲鱼：什么时候该上拼多多？</h3>
+<table class="compare-table">
+<tr><th>维度</th><th>闲鱼</th><th>拼多多</th></tr>
+<tr><td>启动门槛</td><td>零</td><td>保证金1000-2000元（可退）</td></tr>
+<tr><td>流量获取</td><td>自然流量为主</td><td>低价+平台活动+推广</td></tr>
+<tr><td>利润率</td><td>70-95%</td><td>30-60%（需投流）</td></tr>
+<tr><td>竞争程度</td><td>中高</td><td>低（虚拟品类）</td></tr>
+<tr><td>适合品类</td><td>个人IP型、定制类</td><td>标准化素材、模板、合集</td></tr>
+<tr><td>月销量天花板</td><td>500-2000单</td><td>1000-10000+单</td></tr>
+</table>
+
+<h3>拼多多开店全流程</h3>
+
+<div class="step-cards">
+  <div class="step-card"><div class="step-num">1</div><div class="step-title">注册店铺</div><div class="step-desc">下载拼多多商家版<br>个人店→交1000保证金<br>（虚拟类目需2000）</div></div>
+  <div class="step-card"><div class="step-num">2</div><div class="step-title">选虚拟类目</div><div class="step-desc">类目选"数字生活"<br>或"教育培训"<br>虚拟发货无需物流</div></div>
+  <div class="step-card"><div class="step-num">3</div><div class="step-title">上架商品</div><div class="step-desc">主图+SKU+详情页<br>自动发货插件配置<br>（Agiso等工具）</div></div>
+  <div class="step-card"><div class="step-num">4</div><div class="step-title">基础销量</div><div class="step-desc">先让朋友拍5-10单<br>带图好评破零<br>有了评价才有自然转化</div></div>
+  <div class="step-card"><div class="step-num">5</div><div class="step-title">推广放大</div><div class="step-desc">多多的推广→搜索推广<br>日预算30-50开始<br>ROI>2就加预算</div></div>
+</div>
+
+<h3>拼多多虚拟品运营要点</h3>
+
+<div class="callout callout-tip">
+<strong>📌 自动发货是生命线</strong>
+<p>虚拟商品的核心竞争力是<strong>"拍下即发"</strong>。使用自动发货工具（如Agiso、爱用交易），设置好自动回复+网盘链接，买家付款后自动发送，不需要人工干预。24小时自动成交。</p>
+</div>
+
+<h3>拼多多标题优化</h3>
+<p>拼多多的搜索逻辑和闲鱼不同，更注重关键词匹配：</p>
+<div class="formula-box">
+  <strong>大盘热词</strong> + <strong>属性词</strong> + <strong>场景词</strong> + <strong>长尾词</strong>
+</div>
+<p><strong>示例：</strong></p>
+<ul>
+  <li>「直播间背景素材虚拟背景图带货直播壁纸场景布置设计模板2026新款」</li>
+  <li>「PPT模板工作总结述职汇报简历个人简介商务风简约风高端可修改素材」</li>
+</ul>
+
+<h3>推广投流入门</h3>
+<table>
+<tr><th>推广类型</th><th>适合阶段</th><th>日预算</th><th>出价策略</th></tr>
+<tr><td>搜索OCPX</td><td>新品期（<50单）</td><td>¥30-50</td><td>系统推荐出价的80%</td></tr>
+<tr><td>全站推广</td><td>有基础销量后</td><td>¥50-100</td><td>目标ROI 3.0起步</td></tr>
+<tr><td>场景推广</td><td>成熟期</td><td>¥100-200</td><td>类目人群包定向</td></tr>
+</table>
+
+<div class="callout callout-warn">
+<strong>⚠️ 拼多多注意事项</strong>
+<ul>
+  <li>仅退款政策：虚拟品也可能被仅退款，内容质量是唯一防线</li>
+  <li>保证金：虚拟类目通常2000元，不做可退</li>
+  <li>平台抽成：虚拟类目技术服务费0.6%-2%</li>
+  <li>同行抄款严重：爆款1周内必被抄，持续更新是护城河</li>
+  <li>客服响应：平台要求3分钟回复率>80%，否则降权</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<!-- ===== CH11: 抖音/小红书引流 ===== -->
+<div class="section-page page-break">
+<div class="section-hero theme-blue">
+  <div class="part-label">· 第二部分 第十一章 ·</div>
+  <h2>抖音与小红书内容引流</h2>
+  <div class="accent-bar"></div>
+  <div class="section-desc">内容即流量。每个视频/笔记都是一张24小时在线的传单。</div>
+</div>
+<div class="section-body">
+
+<h3>抖音：短视频引爆同城流量</h3>
+
+<h4>摆摊类爆款内容公式</h4>
+<div class="formula-box">
+  <strong>过程展示</strong> + <strong>收入晒单</strong> + <strong>干货分享</strong> = 爆款视频
+</div>
+
+<h4>7大爆款选题模板</h4>
+<table>
+<tr><th>模板</th><th>标题示例</th><th>拍摄难度</th><th>预期流量</th></tr>
+<tr><td>出摊日常Vlog</td><td>「今天5点出摊，11点卖光收工 #摆摊日记」</td><td>⭐</td><td>中</td></tr>
+<tr><td>收入揭秘</td><td>「摆摊第30天，今日营收832元，成本公布」</td><td>⭐</td><td>极高</td></tr>
+<tr><td>制作过程</td><td>「手打柠檬茶全过程，每一杯都锤20下」</td><td>⭐⭐</td><td>高</td></tr>
+<tr><td>干货教学</td><td>「新手摆摊3个避坑建议，少走半年弯路」</td><td>⭐</td><td>高</td></tr>
+<tr><td>顾客互动</td><td>「熟客姐姐又来了，说喝了我的柠檬茶戒不掉」</td><td>⭐</td><td>中高</td></tr>
+<tr><td>前后对比</td><td>「辞职摆摊前vs后，工资条vs今日营收对比」</td><td>⭐⭐</td><td>极高</td></tr>
+<tr><td>答疑类</td><td>「回复粉丝问得最多的5个摆摊问题」</td><td>⭐</td><td>中高</td></tr>
+</table>
+
+<h4>抖音运营节奏</h4>
+<table>
+<tr><th>阶段</th><th>发布频率</th><th>内容重点</th><th>目标</th></tr>
+<tr><td>冷启动（第1-2周）</td><td>每天1条</td><td>出摊日常+干货，带同城定位</td><td>积累500粉</td></tr>
+<tr><td>增长期（第3-4周）</td><td>每天1-2条</td><td>收入揭秘+制作过程，追热点BGM</td><td>破1000粉开橱窗</td></tr>
+<tr><td>变现期（第2个月起）</td><td>每天1条+每周1-2场直播</td><td>直播带货（柠檬茶原料包/配方）</td><td>月GMV破万</td></tr>
+</table>
+
+<h3>小红书：图文种草精准引流</h3>
+
+<h4>小红书热门笔记结构</h4>
+<div style="background:#f8f8f8; border-radius:8px; padding:16px; font-size:10.5pt; line-height:1.8;">
+<strong>封面图：</strong>大字标题 + 产品/成果展示（1:1或3:4竖图）<br>
+<strong>标题公式：</strong>[数字] + [结果] + [人群] + [情绪词]<br>
+<em>示例：「30天摆摊净赚1.2万，辞职后的真实记录😭」</em><br><br>
+<strong>正文结构：</strong><br>
+1. 开头钩子（矛盾/结果/好奇）<br>
+2. 正文干货（分点罗列，每点3行以内）<br>
+3. 互动引导（"你也在XX吗？评论区聊聊"）<br>
+4. 标签（#摆摊 #副业 #柠檬茶 3-5个精准标签）
+</div>
+
+<h4>小红书引流到成交的链路</h4>
+<div class="flow">
+  <div class="flow-step">发笔记</div>
+  <div class="flow-arrow">→</div>
+  <div class="flow-step">评论/私信<br>咨询</div>
+  <div class="flow-arrow">→</div>
+  <div class="flow-step">引导到<br>闲鱼成交</div>
+  <div class="flow-arrow">→</div>
+  <div class="flow-step">加微信<br>变私域</div>
+</div>
+
+<div class="callout callout-info">
+<strong>📌 小红书导流技巧（防封）</strong>
+<ul>
+  <li>不要直接留微信号，会被系统屏蔽</li>
+  <li>在个人简介写「📮 合作私信」或「同款在🐟」</li>
+  <li>私信中用图片发联系方式，文字发号容易判违规</li>
+  <li>置顶笔记留"合集在主页"提示</li>
+  <li>建小红书群聊，在群公告放引导信息</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<!-- ===== CH12: 私域流量 ===== -->
+<div class="section-page page-break">
+<div class="section-hero theme-blue">
+  <div class="part-label">· 第二部分 第十二章 ·</div>
+  <h2>私域流量池搭建与变现</h2>
+  <div class="accent-bar"></div>
+  <div class="section-desc">公域流量越来贵，私域才是长期资产。一个微信好友价值远超一单交易。</div>
+</div>
+<div class="section-body">
+
+<h3>为什么必须做私域？</h3>
+<div class="stat-row">
+  <div class="stat-card"><div class="stat-num">5%</div><div class="stat-label">公域复购率</div></div>
+  <div class="stat-card"><div class="stat-num">40%+</div><div class="stat-label">私域复购率</div></div>
+  <div class="stat-card"><div class="stat-num">0元</div><div class="stat-label">二次触达成本</div></div>
+  <div class="stat-card"><div class="stat-num">5-10元</div><div class="stat-label">公域获客成本</div></div>
+</div>
+
+<h3>私域搭建四步法</h3>
+
+<div class="step-cards">
+  <div class="step-card"><div class="step-num">1</div><div class="step-title">触点布局</div><div class="step-desc">线下：收款码旁放"加微信享9折"<br>线上：发货后附"加V享更新提醒"</div></div>
+  <div class="step-card"><div class="step-num">2</div><div class="step-title">承接话术</div><div class="step-desc">通过后自动发：<br>"感谢支持！回复[1]获取XX福利"</div></div>
+  <div class="step-card"><div class="step-num">3</div><div class="step-title">社群运营</div><div class="step-desc">建微信群：新品预告+老客专享价<br>每周1-2次有价值的内容推送</div></div>
+  <div class="step-card"><div class="step-num">4</div><div class="step-title">变现升级</div><div class="step-desc">从卖单品到卖套餐/会员<br>从卖货到卖方法论/培训</div></div>
+</div>
+
+<h3>微信个人号运营SOP</h3>
+<table>
+<tr><th>时间</th><th>内容类型</th><th>示例</th></tr>
+<tr><td>每周一</td><td>出摊/发货日常</td><td>配图+文案："这周新上了XX，老顾客先看"</td></tr>
+<tr><td>每周三</td><td>干货/价值输出</td><td>"今天分享一个XX小技巧，很多客人问我……"</td></tr>
+<tr><td>每周五</td><td>限时活动/福利</td><td>"周末限定：前10名下单送XX，老客8折"</td></tr>
+<tr><td>每周日</td><td>用户证言/晒单</td><td>截客人好评发圈："感谢信任，继续努力"</td></tr>
+<tr><td>不定期</td><td>生活化内容</td><td>出摊趣事、个人成长、行业观察</td></tr>
+</table>
+
+<h3>私域变现阶梯模型</h3>
+<table>
+<tr><th>层级</th><th>产品</th><th>价格带</th><th>转化率</th><th>月收入潜力</th></tr>
+<tr><td>L1 引流品</td><td>免费资料/1元体验</td><td>¥0-1</td><td>80%+</td><td>获客入口</td></tr>
+<tr><td>L2 利润品</td><td>付费合集/实物产品</td><td>¥9.9-49.9</td><td>15-30%</td><td>主业收入</td></tr>
+<tr><td>L3 高客单品</td><td>1v1咨询/定制服务</td><td>¥99-299</td><td>3-8%</td><td>利润放大器</td></tr>
+<tr><td>L4 会员/课程</td><td>社群会员/线上训练营</td><td>¥199-999</td><td>1-3%</td><td>被动收入</td></tr>
+</table>
+
+<div class="callout callout-tip">
+<strong>💡 私域铁律</strong>
+<ul>
+  <li><strong>80%价值 + 20%营销</strong>：别天天发广告，先给价值再谈变现</li>
+  <li><strong>真人感 > 专业感</strong>：出摊受累拍一张、遇到趣事说一声，越真越信任</li>
+  <li><strong>分层运营</strong>：买过1次的、买过3次的、还没买过的，消息内容要不同</li>
+  <li><strong>一个微信号加满为止</strong>：5000好友×15%转化=750个老客，足以养活一家店</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<!-- ================================================================ -->
+<!-- PART 3: SYNERGY & ADVANCEMENT -->
+<!-- ================================================================ -->
+
+<!-- ===== CH13: 双线联动 ===== -->
+<div class="section-page page-break">
+<div class="section-hero theme-green">
+  <div class="part-label">· 第三部分 第十三章 ·</div>
+  <h2>线上线下联动增长</h2>
+  <div class="accent-bar"></div>
+  <div class="section-desc">同样的货，两条线卖。线下赚现金流，线上赚规模，1+1>3。</div>
+</div>
+<div class="section-body">
+
+<h3>双线联动的核心逻辑</h3>
+<div class="flow">
+  <div class="flow-step">🧑‍🍳 线下出摊<br><small>日入300-800</small></div>
+  <div class="flow-arrow">→</div>
+  <div class="flow-step">📱 拍视频/图文<br><small>内容资产化</small></div>
+  <div class="flow-arrow">→</div>
+  <div class="flow-step">🐟 闲鱼/拼多多<br><small>卖配方/教程</small></div>
+  <div class="flow-arrow">→</div>
+  <div class="flow-step">💬 私域沉淀<br><small>高复购+高价品</small></div>
+</div>
+
+<h3>5种双线联动实战模型</h3>
+
+<h4>模型1：摆摊卖货 → 网上卖教程</h4>
+<div class="callout callout-tip">
+<strong>操作路径：</strong>摆摊卖柠檬茶的制作过程拍下来 → 整理成配方文档 → 挂闲鱼卖9.9元 → 买教程的人加微信 → 后续卖原料包/进阶课
+</div>
+
+<h4>模型2：闲鱼引流 → 线下摆摊</h4>
+<div class="callout callout-tip">
+<strong>操作路径：</strong>闲鱼挂"本地XX美食配方" → 同城买家咨询 → 约线下试吃 → 顺便推销摊位旁的产品 → 如果他想学，收徒线下教学（¥299-999/人）
+</div>
+
+<h4>模型3：抖音同城 → 摊位引流</h4>
+<div class="callout callout-tip">
+<strong>操作路径：</strong>每天出摊拍一条带定位的抖音 → 同城用户刷到 → "原来就在我家旁边！"→ 专门过来打卡 → 到摊后引导加微信
+</div>
+
+<h4>模型4：拼多多跑量 → 微信做利润</h4>
+<div class="callout callout-tip">
+<strong>操作路径：</strong>拼多多挂9.9元低价资料包走量 → 包裹里放"加V领取进阶版"卡片 → 微信卖49-99元的高阶产品
+</div>
+
+<h4>模型5：小红书IP → 多元变现</h4>
+<div class="callout callout-tip">
+<strong>操作路径：</strong>持续发摆摊干货建立"摆摊博主"人设 → 接广告/带货/付费咨询 → 把粉丝引导到微信 → 卖高阶课程/社群会员
+</div>
+
+<h3>双线操作周计划模板</h3>
+<table>
+<tr><th>时段</th><th>周一</th><th>周二</th><th>周三</th><th>周四</th><th>周五</th><th>周六</th><th>周日</th></tr>
+<tr><td>上午</td><td>采购备货</td><td>回闲鱼消息</td><td>采购备货</td><td>回复评论</td><td>采购备货</td><td>拍视频素材</td><td>周复盘</td></tr>
+<tr><td>下午</td><td>发小红书</td><td>优化拼多多</td><td>写私域文案</td><td>发货处理</td><td>发朋友圈</td><td>剪辑视频</td><td>下周计划</td></tr>
+<tr><td>晚上</td><td>出摊</td><td>出摊</td><td>出摊</td><td>出摊</td><td>出摊</td><td>出摊（黄金）</td><td>休息</td></tr>
+</table>
+
+</div>
+</div>
+
+<!-- ===== CH14: 进阶路径 ===== -->
+<div class="section-page page-break">
+<div class="section-hero theme-green">
+  <div class="part-label">· 第三部分 第十四章 ·</div>
+  <h2>从兼职到全职的进阶路径</h2>
+  <div class="accent-bar"></div>
+  <div class="section-desc">别急着辞职。用4个阶段逐步放大，直到副业收入稳定超过工资。</div>
+</div>
+<div class="section-body">
+
+<h3>四阶段进阶模型</h3>
+
+<h4>阶段1：试水期（第1-2周）</h4>
+<table>
+<tr><th>目标</th><th>出摊频率</th><th>关键动作</th><th>里程碑</th></tr>
+<tr><td>跑通最小的变现闭环</td><td>2-3天/周（晚上+周末）</td><td>测2-3个品，找1个畅销品<br>摸清从进货到收摊的全流程</td><td>日均净赚≥100元<br>完成首次出摊不亏本</td></tr>
+</table>
+
+<h4>阶段2：稳定期（第3-4周）</h4>
+<table>
+<tr><th>目标</th><th>出摊频率</th><th>关键动作</th><th>里程碑</th></tr>
+<tr><td>建立稳定的收入和流程</td><td>4-5天/周</td><td>固定1-2个主打品+固定位置<br>开始同步发闲鱼/小红书<br>建微信客户群</td><td>日均净赚≥200元<br>闲鱼出首单<br>私域好友>50人</td></tr>
+</table>
+
+<h4>阶段3：增长期（第2-3个月）</h4>
+<table>
+<tr><th>目标</th><th>出摊频率</th><th>关键动作</th><th>里程碑</th></tr>
+<tr><td>双线收入稳步增长</td><td>5-6天/周</td><td>线上多平台上架+投流测试<br>考虑周末加点位/叫家人帮忙<br>私域做第一次变现活动</td><td>月净收入≥8000元<br>线上收入占比>20%<br>私域好友>200人</td></tr>
+</table>
+
+<h4>阶段4：放大期（第4-6个月）</h4>
+<table>
+<tr><th>目标</th><th>出摊频率</th><th>关键动作</th><th>里程碑</th></tr>
+<tr><td>月净收入稳定过1.5万</td><td>全职投入</td><td>多摊位/雇人<br>线上店投流日预算100+<br>推出高阶产品（培训/会员）<br>考虑从摆摊到开小店</td><td>月净收入≥15000元<br>线上收入占比>30%<br>考虑辞职全职做</td></tr>
+</table>
+
+<h3>辞职信号灯 🚦</h3>
+<div class="callout callout-danger">
+<strong>🔴 不要辞职的信号：</strong>
+<ul>
+  <li>副业收入 < 工资的50%</li>
+  <li>只做了一个月，还没经历淡季/雨天/严管期</li>
+  <li>只有线下收入，没有线上收入做后盾</li>
+  <li>没有3个月以上的生活储蓄</li>
+</ul>
+</div>
+<div class="callout callout-tip">
+<strong>🟢 可以考虑全职的信号：</strong>
+<ul>
+  <li>副业收入连续3个月 > 工资</li>
+  <li>线上线下双线都有稳定收入</li>
+  <li>有3-6个月生活费的储蓄</li>
+  <li>私域有500+老客，不再依赖平台流量</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<!-- ===== CH15: 工具包 ===== -->
+<div class="section-page page-break">
+<div class="section-hero theme-green">
+  <div class="part-label">· 第三部分 第十五章 ·</div>
+  <h2>工具包与资源汇总</h2>
+  <div class="accent-bar"></div>
+  <div class="section-desc">好工具让效率翻倍。以下每个工具都经过实际使用验证。</div>
+</div>
+<div class="section-body">
+
+<h3>线下摆摊工具箱</h3>
+<table>
+<tr><th>场景</th><th>工具</th><th>用途</th><th>费用</th></tr>
+<tr><td>收款</td><td>微信/支付宝收款码</td><td>主收款方式</td><td>免费</td></tr>
+<tr><td>记账</td><td>鲨鱼记账 / 随手记</td><td>每日收支记录</td><td>免费</td></tr>
+<tr><td>天气</td><td>墨迹天气 / 彩云天气</td><td>精确到小时的降雨预报</td><td>免费</td></tr>
+<tr><td>拍摄</td><td>剪映</td><td>手机剪辑短视频</td><td>免费</td></tr>
+<tr><td>音乐</td><td>网易云/QQ音乐</td><td>摊位BGM</td><td>免费</td></tr>
+<tr><td>设计</td><td>Canva / 醒图</td><td>制作价格牌/招牌/封面</td><td>免费</td></tr>
+</table>
+
+<h3>电子商铺工具箱</h3>
+<table>
+<tr><th>场景</th><th>工具</th><th>用途</th><th>费用</th></tr>
+<tr><td>主图设计</td><td>Canva / 稿定设计</td><td>闲鱼/拼多多商品主图</td><td>免费/会员</td></tr>
+<tr><td>文案辅助</td><td>DeepSeek / Claude</td><td>写标题、文案、优化关键词</td><td>免费</td></tr>
+<tr><td>自动发货</td><td>Agiso / 爱用交易</td><td>拼多多虚拟商品自动发货</td><td>免费版可用</td></tr>
+<tr><td>网盘</td><td>阿里云盘 / 夸克网盘</td><td>存储和分享数字产品</td><td>免费</td></tr>
+<tr><td>数据分析</td><td>多多参谋 / 闲鱼助手</td><td>竞品分析和数据跟踪</td><td>部分免费</td></tr>
+<tr><td>私域管理</td><td>企业微信 / 微信</td><td>客户管理+社群运营</td><td>免费</td></tr>
+<tr><td>二维码</td><td>草料二维码</td><td>生成网盘链接二维码</td><td>免费</td></tr>
+</table>
+
+<h3>推荐关注的信息源</h3>
+<table>
+<tr><th>类型</th><th>名称</th><th>平台</th><th>价值</th></tr>
+<tr><td>行业报告</td><td>闲鱼年度报告 / 1688行业趋势</td><td>官网</td><td>了解大盘趋势和热销品类</td></tr>
+<tr><td>同行学习</td><td>搜"摆摊""闲鱼开店"相关博主</td><td>抖音/小红书</td><td>抄作业，看别人怎么做</td></tr>
+<tr><td>政策动态</td><td>当地城管/市容局公众号</td><td>微信</td><td>了解便民摊点政策和规划</td></tr>
+<tr><td>进货风向</td><td>1688热销榜 / 义乌购</td><td>1688</td><td>什么品在起量，跟着大盘走</td></tr>
+<tr><td>平台规则</td><td>闲鱼安全中心 / 拼多多规则中心</td><td>App内</td><td>避免违规封号，必看</td></tr>
+</table>
+
+<div class="footer-note">
+  <strong>📌 免责声明</strong><br>
+  本指南为个人收集整理的市场参考信息和经验总结，仅供学习交流参考使用。<br>
+  内容中提及的收入数据为实地调研和公开信息整理，不代表个人实际收益承诺。<br>
+  创业有风险，投入前请结合自身情况审慎判断。<br><br>
+  2026年5月版 · 持续更新中 · 感谢支持
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
