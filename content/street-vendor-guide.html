@@ -348,9 +348,39 @@
       .toc { padding: 30px 14px; }
     }
   }
+
+  /* ===== DOWNLOAD BUTTON ===== */
+  .download-btn {
+    display: none;
+    position: fixed; top: 20px; right: 20px; z-index: 9999;
+    background: #e8453c; color: #fff;
+    padding: 12px 24px; border-radius: 30px;
+    font-size: 14px; font-weight: 700; text-decoration: none;
+    box-shadow: 0 4px 16px rgba(232,69,60,0.4);
+    transition: transform 0.2s, box-shadow 0.2s;
+    letter-spacing: 1px;
+  }
+  .download-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 24px rgba(232,69,60,0.55);
+  }
+  .download-btn .icon { margin-right: 6px; }
+  @media screen {
+    .download-btn { display: inline-block; }
+  }
+  @media print {
+    .download-btn { display: none !important; }
+  }
+  @media (max-width: 640px) {
+    .download-btn { top: 10px; right: 10px; padding: 10px 18px; font-size: 12px; }
+  }
 </style>
 </head>
 <body>
+
+<a class="download-btn" href="street-vendor-guide.pdf" download>
+  <span class="icon">📥</span>下载PDF
+</a>
 
 <!-- ===== COVER ===== -->
 <div class="cover">
