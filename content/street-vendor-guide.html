@@ -2,6 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
   @page {
     size: A4;
@@ -282,6 +283,70 @@
     border-top: 2px solid #e5e5e5;
     font-size: 9.5pt; color: #999; text-align: center;
     line-height: 1.6;
+  }
+
+  /* ===== SCREEN OVERRIDES ===== */
+  @media screen {
+    body {
+      background: #f0f0f0;
+      display: flex; flex-direction: column; align-items: center;
+    }
+    .cover {
+      width: 100%; min-height: 100vh; height: auto;
+      padding: 40px 20px;
+    }
+    .cover .icon-row { font-size: 32pt; }
+    .cover h1 { font-size: 28pt; }
+    .cover .subtitle { font-size: 13pt; }
+    .cover .badge-row { flex-wrap: wrap; }
+    .toc {
+      width: 100%; max-width: 900px; min-height: auto;
+      padding: 40px 24px; background: #fff; margin: 0;
+    }
+    .section-page {
+      width: 100%; min-height: auto;
+      background: #fff; margin: 0;
+    }
+    .section-hero {
+      width: 100%; max-width: 100%;
+      padding: 40px 24px 20px;
+    }
+    .section-body {
+      padding: 0 24px 30px;
+    }
+    .page-break { page-break-before: auto; }
+    .step-cards { flex-wrap: wrap; }
+    .step-card { min-width: 130px; }
+    .stat-row { flex-wrap: wrap; }
+    .stat-card { min-width: 140px; }
+    .flow { flex-wrap: wrap; }
+    .two-col { flex-direction: column; }
+    .cover .ornament { font-size: 20pt; letter-spacing: 10px; }
+
+    /* max-width container for large screens */
+    .section-page, .toc {
+      max-width: 900px; margin: 0 auto;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+    .section-page:last-of-type { margin-bottom: 0; }
+
+    /* mobile adjustments */
+    @media (max-width: 640px) {
+      .cover h1 { font-size: 22pt; letter-spacing: 3px; }
+      .cover .subtitle { font-size: 11pt; }
+      .cover .icon-row { font-size: 26pt; }
+      .section-hero h2 { font-size: 20pt; }
+      .step-cards { gap: 8px; }
+      .step-card { min-width: 100px; padding: 12px 8px; }
+      .stat-card { min-width: 100px; padding: 12px 8px; }
+      .stat-card .stat-num { font-size: 16pt; }
+      table { font-size: 9pt; }
+      th, td { padding: 6px 8px; }
+      .formula-box .formula { font-size: 13pt; }
+      .section-body { padding: 0 14px 20px; }
+      .section-hero { padding: 30px 14px 16px; }
+      .toc { padding: 30px 14px; }
+    }
   }
 </style>
 </head>
